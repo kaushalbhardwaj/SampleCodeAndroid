@@ -1,3 +1,24 @@
+import android.R.id.message
+import android.app.Notification
+import android.app.PendingIntent
+import android.app.Service
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
+import android.os.IBinder
+import android.text.TextUtils
+import android.util.Log
+import androidx.annotation.Nullable
+import androidx.annotation.RequiresApi
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import java.io.File
 
 class UploadAudioForegroundService : Service() {
     var imagePath: String? = null
@@ -39,7 +60,7 @@ class UploadAudioForegroundService : Service() {
             .setContentTitle("Uploading Post")
             .setContentText(input)
             .setProgress(100, 0, true)
-            .setSmallIcon(R.drawable.ic_logo_mepod)
+            .setSmallIcon(R.drawable.ic_logo)
             .addAction(R.drawable.ic_icon_audio_clip, "Cancel", actionIntent)
             .build()
         startForeground(1, notification)
