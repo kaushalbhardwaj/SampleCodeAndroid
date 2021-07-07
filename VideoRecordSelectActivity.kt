@@ -10,9 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
-import com.mepod.R
-import com.mepod.databinding.ActivityVideoRecordSelectBinding
-import com.mepod.util.IntentUtil
 import com.video.trimmer.utils.FileUtils
 
 class VideoRecordSelectActivity : AppCompatActivity() {
