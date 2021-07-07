@@ -12,14 +12,6 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import com.mepod.MainActivity
-import com.mepod.R
-import com.mepod.RootActivity
-import com.mepod.api.ApiClient
-import com.mepod.api.ApiInterface
-import com.mepod.databinding.ActivityComposePostBinding
-import com.mepod.util.*
-import com.mepod.util.GenUtil.hideKeyboard
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -147,7 +139,7 @@ class ComposePostActivity : RootActivity() {
             MultipartBody.FORM, descriptionString
         )
         val hashtags = RequestBody.create(
-            MultipartBody.FORM, "[ \"#Mepod\", \"#MJ\" ]"
+            MultipartBody.FORM, "[ \"#TAG\", \"#MJ\" ]"
         )
         val apiService = ApiClient.getClient().create(ApiInterface::class.java)
         val call = apiService.composePost(
