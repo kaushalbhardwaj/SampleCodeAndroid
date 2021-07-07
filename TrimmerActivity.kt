@@ -13,9 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
-import com.mepod.R
-import com.mepod.databinding.ActivityTrimmerBinding
-import com.mepod.util.IntentUtil
 import com.video.sample.VideoProgressIndeterminateDialog
 import com.video.trimmer.interfaces.OnTrimVideoListener
 import com.video.trimmer.interfaces.OnVideoListener
