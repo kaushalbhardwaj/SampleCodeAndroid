@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.CodeBoy.MediaFacer.mediaHolders.videoContent
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.mepod.databinding.ItemVideoListBinding
-import com.mepod.util.GenUtil
-import com.mepod.util.IntentUtil
 import java.util.*
 
 class VideoAdapter(var context: Context, var videoArrayList: ArrayList<videoContent>) :
