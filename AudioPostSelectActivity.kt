@@ -23,13 +23,6 @@ import com.CodeBoy.MediaFacer.MediaFacer
 import com.CodeBoy.MediaFacer.VideoGet
 import com.CodeBoy.MediaFacer.mediaHolders.audioContent
 import com.CodeBoy.MediaFacer.mediaHolders.videoContent
-import com.mepod.R
-import com.mepod.RootActivity
-import com.mepod.databinding.ActivityAudioPostSelectBinding
-import com.mepod.util.GenUtil
-import com.mepod.util.GenUtil.hideKeyboard
-import com.mepod.util.GenUtil.showKeyboard
-import com.mepod.video.VideoAdapter
 
 
 class AudioPostSelectActivity : RootActivity() {
